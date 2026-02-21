@@ -1,14 +1,11 @@
 package Main;
 
-
-
-
 import UtitlityClasses.LengthUnit;
 import UtitlityClasses.QuantityLength;
 
 import java.util.Scanner;
 
-  class Main {
+class Main {
 
     public static void main(String[] args) {
 
@@ -47,6 +44,17 @@ import java.util.Scanner;
         if (unit.equalsIgnoreCase("inch") ||
                 unit.equalsIgnoreCase("inches")) {
             return LengthUnit.INCH;
+        }
+
+        if (unit.equalsIgnoreCase("yard") ||
+                unit.equalsIgnoreCase("yards")) {
+            return LengthUnit.YARDS;
+        }
+
+        if (unit.equalsIgnoreCase("cm") ||
+                unit.equalsIgnoreCase("centimeter") ||
+                unit.equalsIgnoreCase("centimeters")) {
+            return LengthUnit.CENTIMETERS;
         }
 
         throw new IllegalArgumentException("Unsupported unit");
