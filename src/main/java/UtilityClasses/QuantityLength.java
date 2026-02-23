@@ -1,4 +1,4 @@
-package UtitlityClasses;
+package UtilityClasses;
 
 import java.util.Objects;
 

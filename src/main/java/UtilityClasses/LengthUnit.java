@@ -1,4 +1,4 @@
-package UtitlityClasses;
+package UtilityClasses;
 
 public enum LengthUnit {
 
