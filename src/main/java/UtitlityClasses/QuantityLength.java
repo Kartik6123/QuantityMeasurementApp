@@ -2,9 +2,6 @@ package UtitlityClasses;
 
 import java.util.Objects;
 
-/**
- * Immutable value object representing a length measurement.
- */
 public final class QuantityLength {
 
     private final double value;
@@ -40,9 +37,6 @@ public final class QuantityLength {
 
     // ---------------- UC5 STATIC API ----------------
 
-    /**
-     * Converts a value from source unit to target unit.
-     */
     public static double convert(double value,
                                  LengthUnit source,
                                  LengthUnit target) {
@@ -56,25 +50,15 @@ public final class QuantityLength {
         }
 
         double valueInFeet = source.toFeet(value);
-
         return target.fromFeet(valueInFeet);
     }
 
-    // ---------------- INSTANCE METHOD ----------------
-
-    /**
-     * Converts this QuantityLength to another unit.
-     * Returns a new immutable instance.
-     */
     public QuantityLength convertTo(LengthUnit target) {
-
         double convertedValue = convert(this.value, this.unit, target);
-
         return new QuantityLength(convertedValue, target);
     }
 
     // ---------------- equals override ----------------
-
 
     @Override
     public boolean equals(Object obj) {
@@ -90,35 +74,65 @@ public final class QuantityLength {
                 this.toBaseUnit() - other.toBaseUnit()
         ) < EPSILON;
     }
-//Adding (UC6)
-    public static QuantityLength add(
+
+    // ---------------- PRIVATE BASE ADDITION ----------------
+
+    private static double addInBaseUnit(
             QuantityLength q1,
             QuantityLength q2) {
 
+        double base1 = q1.toBaseUnit();
+        double base2 = q2.toBaseUnit();
+
+        return base1 + base2;
+    }
+
+    // ---------------- UC7 ADD WITH TARGET ----------------
+
+    public static QuantityLength add(
+            QuantityLength q1,
+            QuantityLength q2,
+            LengthUnit targetUnit) {
+
         if (q1 == null || q2 == null) {
             throw new IllegalArgumentException("Operands cannot be null.");
+        }
+
+        if (targetUnit == null) {
+            throw new IllegalArgumentException("Target unit cannot be null.");
         }
 
         if (!Double.isFinite(q1.value) || !Double.isFinite(q2.value)) {
             throw new IllegalArgumentException("Values must be finite.");
         }
 
-        // Convert both to base unit (feet)
-        double base1 = q1.unit.toFeet(q1.value);
-        double base2 = q2.unit.toFeet(q2.value);
+        double sumInFeet = addInBaseUnit(q1, q2);
 
-        // Add in base unit
-        double sumInFeet = base1 + base2;
+        double resultValue = targetUnit.fromFeet(sumInFeet);
 
-        // Convert back to unit of first operand
-        double resultValue =
-                q1.unit.fromFeet(sumInFeet);
-
-        return new QuantityLength(resultValue, q1.unit);
+        return new QuantityLength(resultValue, targetUnit);
     }
+
+    // ---------------- UC6 BACKWARD COMPATIBILITY ----------------
+
+    public static QuantityLength add(
+            QuantityLength q1,
+            QuantityLength q2) {
+
+        return add(q1, q2, q1.unit);
+    }
+
     public QuantityLength add(QuantityLength other) {
-        return add(this, other);
+        return add(this, other, this.unit);
     }
+
+    public QuantityLength add(
+            QuantityLength other,
+            LengthUnit targetUnit) {
+
+        return add(this, other, targetUnit);
+    }
+
     @Override
     public int hashCode() {
         return Objects.hash(toBaseUnit());

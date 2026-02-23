@@ -37,6 +37,19 @@ public class QuantityMeasurementApp {
                 " and " + q2 +
                 " -> Result: " + result);
     }
+    public static void demonstrateLengthAdditionWithTarget(
+        QuantityLength q1,
+        QuantityLength q2,
+        LengthUnit target) {
+
+    QuantityLength result =
+            q1.add(q2, target);
+
+    System.out.println("Add " + q1 +
+            " and " + q2 +
+            " in " + target +
+            " -> Result: " + result);
+}
 
     public static void main(String[] args) {
 
@@ -72,5 +85,11 @@ public class QuantityMeasurementApp {
                 new QuantityLength(1.0, LengthUnit.YARDS),
                 new QuantityLength(3.0, LengthUnit.FEET)
         );
+        // ---------- UC7 Addition with Target ----------
+demonstrateLengthAdditionWithTarget(
+        new QuantityLength(1.0, LengthUnit.FEET),
+        new QuantityLength(12.0, LengthUnit.INCH),
+        LengthUnit.YARDS
+);
     }
 }
