@@ -1,28 +1,34 @@
 package UtilityClasses;
 
-public enum WeightUnit {
+public enum WeightUnit implements IMeasurable {
 
     KILOGRAM(1.0),
     GRAM(0.001),
-    POUND(0.453592); // 1 lb = 0.453592 kg
+    POUND(0.453592);
 
-    private final double conversionFactorToKg;
+    private final double conversionFactorToKilogram;
 
-    WeightUnit(double conversionFactorToKg) {
-        this.conversionFactorToKg = conversionFactorToKg;
+    WeightUnit(double conversionFactorToKilogram) {
+        this.conversionFactorToKilogram = conversionFactorToKilogram;
     }
 
-    // Convert value in this unit → base unit (kg)
-    public double convertToBaseUnit(double value) {
-        return value * conversionFactorToKg;
-    }
-
-    // Convert base unit (kg) → this unit
-    public double convertFromBaseUnit(double baseValue) {
-        return baseValue / conversionFactorToKg;
-    }
-
+    @Override
     public double getConversionFactor() {
-        return conversionFactorToKg;
+        return conversionFactorToKilogram;
+    }
+
+    @Override
+    public double convertToBaseUnit(double value) {
+        return value * conversionFactorToKilogram;
+    }
+
+    @Override
+    public double convertFromBaseUnit(double baseValue) {
+        return baseValue / conversionFactorToKilogram;
+    }
+
+    @Override
+    public String getUnitName() {
+        return name();
     }
 }
