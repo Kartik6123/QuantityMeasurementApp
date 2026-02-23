@@ -147,11 +147,9 @@ public class Quantity<U extends IMeasurable> {
    
     // SUBTRACT
  
-
     public Quantity<U> subtract(Quantity<U> other) {
         return subtract(other, this.unit);
     }
-
     public Quantity<U> subtract(Quantity<U> other, U targetUnit) {
 
         validateArithmeticOperands(other, targetUnit, true);
@@ -161,11 +159,8 @@ public class Quantity<U extends IMeasurable> {
         double converted = targetUnit.convertFromBaseUnit(baseResult);
 
         return new Quantity<>(converted, targetUnit);
-    }
-
-  
-    // DIVIDE (returns scalar)
-    
+    }  
+// DIVIDE (returns scalar)
 
     public double divide(Quantity<U> other) {
 
