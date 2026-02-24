@@ -73,7 +73,6 @@ public class QuantityMeasurementApp {
 
         demonstrateLengthEquality(q1, q2);
 
-        // ---------- UC6 Addition ----------
         demonstrateLengthAddition(
                 new QuantityLength(1.0, LengthUnit.FEET),
                 new QuantityLength(12.0, LengthUnit.INCH)
