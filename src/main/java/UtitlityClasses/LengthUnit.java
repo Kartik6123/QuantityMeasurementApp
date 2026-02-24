@@ -1,9 +1,5 @@
 package UtitlityClasses;
 
-/**
- * Represents supported length units.
- * Each unit stores a conversion factor relative to FEET (base unit).
- */
 public enum LengthUnit {
 
     FEET(1.0),

@@ -53,7 +53,6 @@ public class QuantityMeasurementApp {
 
     public static void main(String[] args) {
 
-        // ---------- UC5 Conversion ----------
         demonstrateLengthConversion(1.0,
                 LengthUnit.FEET,
                 LengthUnit.INCH);
@@ -66,7 +65,7 @@ public class QuantityMeasurementApp {
                 LengthUnit.CENTIMETERS,
                 LengthUnit.INCH);
 
-        // ---------- UC4 Equality ----------
+
         QuantityLength q1 =
                 new QuantityLength(1.0, LengthUnit.FEET);
 
@@ -75,7 +74,6 @@ public class QuantityMeasurementApp {
 
         demonstrateLengthEquality(q1, q2);
 
-        // ---------- UC6 Addition ----------
         demonstrateLengthAddition(
                 new QuantityLength(1.0, LengthUnit.FEET),
                 new QuantityLength(12.0, LengthUnit.INCH)
@@ -85,7 +83,7 @@ public class QuantityMeasurementApp {
                 new QuantityLength(1.0, LengthUnit.YARDS),
                 new QuantityLength(3.0, LengthUnit.FEET)
         );
-        // ---------- UC7 Addition with Target ----------
+
 demonstrateLengthAdditionWithTarget(
         new QuantityLength(1.0, LengthUnit.FEET),
         new QuantityLength(12.0, LengthUnit.INCH),

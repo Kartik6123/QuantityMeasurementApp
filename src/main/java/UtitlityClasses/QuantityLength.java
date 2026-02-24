@@ -35,7 +35,6 @@ public final class QuantityLength {
         return unit.toFeet(value);
     }
 
-    // ---------------- UC5 STATIC API ----------------
 
     public static double convert(double value,
                                  LengthUnit source,
@@ -58,7 +57,6 @@ public final class QuantityLength {
         return new QuantityLength(convertedValue, target);
     }
 
-    // ---------------- equals override ----------------
 
     @Override
     public boolean equals(Object obj) {
@@ -75,7 +73,6 @@ public final class QuantityLength {
         ) < EPSILON;
     }
 
-    // ---------------- PRIVATE BASE ADDITION ----------------
 
     private static double addInBaseUnit(
             QuantityLength q1,
@@ -86,8 +83,6 @@ public final class QuantityLength {
 
         return base1 + base2;
     }
-
-    // ---------------- UC7 ADD WITH TARGET ----------------
 
     public static QuantityLength add(
             QuantityLength q1,
@@ -113,7 +108,6 @@ public final class QuantityLength {
         return new QuantityLength(resultValue, targetUnit);
     }
 
-    // ---------------- UC6 BACKWARD COMPATIBILITY ----------------
 
     public static QuantityLength add(
             QuantityLength q1,
