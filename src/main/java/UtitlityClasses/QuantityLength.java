@@ -2,9 +2,6 @@ package UtitlityClasses;
 
 import java.util.Objects;
 
-/**
- * Immutable value object representing a length measurement.
- */
 public final class QuantityLength {
 
     private final double value;
@@ -38,11 +35,7 @@ public final class QuantityLength {
         return unit.toFeet(value);
     }
 
-    // ---------------- UC5 STATIC API ----------------
 
-    /**
-     * Converts a value from source unit to target unit.
-     */
     public static double convert(double value,
                                  LengthUnit source,
                                  LengthUnit target) {
@@ -60,12 +53,7 @@ public final class QuantityLength {
         return target.fromFeet(valueInFeet);
     }
 
-    // ---------------- INSTANCE METHOD ----------------
 
-    /**
-     * Converts this QuantityLength to another unit.
-     * Returns a new immutable instance.
-     */
     public QuantityLength convertTo(LengthUnit target) {
 
         double convertedValue = convert(this.value, this.unit, target);
@@ -73,7 +61,6 @@ public final class QuantityLength {
         return new QuantityLength(convertedValue, target);
     }
 
-    // ---------------- equals override ----------------
 
 
     @Override
@@ -90,7 +77,7 @@ public final class QuantityLength {
                 this.toBaseUnit() - other.toBaseUnit()
         ) < EPSILON;
     }
-//Adding (UC6)
+
     public static QuantityLength add(
             QuantityLength q1,
             QuantityLength q2) {
@@ -103,14 +90,9 @@ public final class QuantityLength {
             throw new IllegalArgumentException("Values must be finite.");
         }
 
-        // Convert both to base unit (feet)
         double base1 = q1.unit.toFeet(q1.value);
         double base2 = q2.unit.toFeet(q2.value);
-
-        // Add in base unit
         double sumInFeet = base1 + base2;
-
-        // Convert back to unit of first operand
         double resultValue =
                 q1.unit.fromFeet(sumInFeet);
 
