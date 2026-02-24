@@ -8,7 +8,6 @@ public final class QuantityWeight {
     private final WeightUnit unit;
 
     private static final double EPSILON = 1e-4; 
-    // Slightly relaxed because pound conversion introduces approximation
 
     public QuantityWeight(double value, WeightUnit unit) {
 
@@ -34,7 +33,6 @@ public final class QuantityWeight {
         return unit.convertToBaseUnit(value);
     }
 
-    // ---------------- CONVERSION ----------------
 
     public QuantityWeight convertTo(WeightUnit target) {
 
@@ -47,7 +45,6 @@ public final class QuantityWeight {
         return new QuantityWeight(converted, target);
     }
 
-    // ---------------- EQUALITY ----------------
 
     @Override
     public boolean equals(Object obj) {
@@ -70,7 +67,6 @@ public final class QuantityWeight {
         return Long.hashCode(rounded);
     }
 
-    // ---------------- ADDITION ----------------
 
     private static double addInBaseUnit(
             QuantityWeight w1,
@@ -79,7 +75,6 @@ public final class QuantityWeight {
         return w1.toBaseUnit() + w2.toBaseUnit();
     }
 
-    // Explicit target unit
     public static QuantityWeight add(
             QuantityWeight w1,
             QuantityWeight w2,
@@ -97,7 +92,6 @@ public final class QuantityWeight {
         return new QuantityWeight(result, targetUnit);
     }
 
-    // Default → FIRST OPERAND UNIT
     public static QuantityWeight add(
             QuantityWeight w1,
             QuantityWeight w2) {
@@ -105,7 +99,6 @@ public final class QuantityWeight {
         return add(w1, w2, w1.unit);
     }
 
-    // Instance add (default)
     public QuantityWeight add(QuantityWeight other) {
 
         if (other == null)
@@ -114,7 +107,6 @@ public final class QuantityWeight {
         return add(this, other, this.unit);
     }
 
-    // Instance add (explicit target)
     public QuantityWeight add(
             QuantityWeight other,
             WeightUnit targetUnit) {
