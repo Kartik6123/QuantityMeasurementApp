@@ -33,7 +33,7 @@ public final class QuantityLength {
         return unit.convertToBaseUnit(value);
     }
 
-    // ---------- Conversion ----------
+
 
     public static double convert(double value,
                                  LengthUnit source,
@@ -54,7 +54,7 @@ public final class QuantityLength {
         return new QuantityLength(converted, target);
     }
 
-    // ---------- Equality ----------
+
 
     @Override
     public boolean equals(Object obj) {
@@ -76,7 +76,7 @@ public final class QuantityLength {
         return Objects.hash(toBaseUnit());
     }
 
-    // ---------- Addition (UC7 Compatible) ----------
+
 
     private static double addInBaseUnit(
             QuantityLength q1,
