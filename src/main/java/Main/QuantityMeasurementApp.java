@@ -30,7 +30,6 @@ public class QuantityMeasurementApp {
 
     public static void main(String[] args) {
 
-        // Length Example
         Quantity<LengthUnit> l1 =
                 new Quantity<>(1.0, LengthUnit.FEET);
 
@@ -41,7 +40,7 @@ public class QuantityMeasurementApp {
         demonstrateConversion(l1, LengthUnit.INCH);
         demonstrateAddition(l1, l2, LengthUnit.FEET);
 
-        // Weight Example
+
         Quantity<WeightUnit> w1 =
                 new Quantity<>(1.0, WeightUnit.KILOGRAM);
 
@@ -58,7 +57,7 @@ public class QuantityMeasurementApp {
         new Quantity<>(1000.0, VolumeUnit.MILLILITRE);
 
        demonstrateEquality(v1, v2);
-       // ---------- SUBTRACTION DEMO ----------
+
 
 Quantity<LengthUnit> l4 =
         new Quantity<>(10.0, LengthUnit.FEET);
@@ -69,7 +68,6 @@ System.out.println("Subtract: " + l1.subtract(l2));
 System.out.println("Subtract (explicit inches): "
         + l4.subtract(l6, LengthUnit.INCH));
 
-// ---------- DIVISION DEMO ----------
 
 System.out.println("Divide: "
         + l1.divide(new Quantity<>(2.0, LengthUnit.FEET)));

@@ -7,10 +7,6 @@
     <list default="true" id="f8b5f86e-c88b-48a2-9631-c630b972eaa1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/Main/QuantityMeasurementApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/QuantityMeasurementApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/Quantity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UtilityClasses/Quantity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/QuantityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/QuantityTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main/QuantityMeasurementApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/QuantityMeasurementApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/UtilityClasses/Quantity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UtilityClasses/Quantity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/QuantityTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/QuantityTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +44,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/UC12-ArithmeticOperations",
+    "git-widget-placeholder": "feature/UC13-CentralizedArithmeticOperations",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
@@ -67,7 +63,28 @@
       <option name="presentableId" value="Default" />
       <updated>1771712733662</updated>
     </task>
+    <task id="LOCAL-00001" summary="[Kartik Arora] Add . Solved use case 9">
+      <option name="closed" value="true" />
+      <created>1771913151028</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1771913151028</updated>
+    </task>
+    <task id="LOCAL-00002" summary="[Kartik Arora] Add . Solved use case 9">
+      <option name="closed" value="true" />
+      <created>1771913157906</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1771913157906</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[Kartik Arora] Add . Solved use case 9" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Kartik Arora] Add . Solved use case 9" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

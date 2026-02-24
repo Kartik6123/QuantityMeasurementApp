@@ -27,9 +27,7 @@ public class Quantity<U extends IMeasurable> {
     public U getUnit() {
         return unit;
     }
- 
-    // Equality
-    // =========================
+
 
     @Override
     public boolean equals(Object obj) {
@@ -61,10 +59,6 @@ public class Quantity<U extends IMeasurable> {
         return "Quantity(" + value + ", " + unit.getUnitName() + ")";
     }
 
- 
-    // Conversion
-    // =========================
-
     public Quantity<U> convertTo(U targetUnit) {
 
         if (targetUnit == null)
@@ -75,10 +69,6 @@ public class Quantity<U extends IMeasurable> {
 
         return new Quantity<>(converted, targetUnit);
     }
-
-    
-    // Arithmetic Operations  
-    // =========================
 
     private enum ArithmeticOperation {
         ADD {
@@ -125,10 +115,6 @@ public class Quantity<U extends IMeasurable> {
         return operation.compute(baseThis, baseOther);
     }
 
- 
-    // ADD
-    // =========================
-
     public Quantity<U> add(Quantity<U> other) {
         return add(other, this.unit);
     }
@@ -144,9 +130,6 @@ public class Quantity<U extends IMeasurable> {
         return new Quantity<>(converted, targetUnit);
     }
 
-   
-    // SUBTRACT
- 
     public Quantity<U> subtract(Quantity<U> other) {
         return subtract(other, this.unit);
     }
@@ -159,8 +142,7 @@ public class Quantity<U extends IMeasurable> {
         double converted = targetUnit.convertFromBaseUnit(baseResult);
 
         return new Quantity<>(converted, targetUnit);
-    }  
-// DIVIDE (returns scalar)
+    }
 
     public double divide(Quantity<U> other) {
 
