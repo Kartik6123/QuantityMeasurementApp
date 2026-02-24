@@ -12,8 +12,7 @@ This application supports:
 
 - ✅ Cross-unit equality comparison  
 - 🔄 Automatic unit conversion  
-- ➕ Arithmetic operations (with target unit support)  
-- 🌡️ Temperature handling with selective arithmetic rules  
+- ➕ Arithmetic operations (with target unit support)   
 - 🧪 JUnit-based testing with EPS precision handling  
 
 ---
