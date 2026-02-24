@@ -15,10 +15,9 @@ public class FeetEquality {
 
         @Override
         public boolean equals(Object obj) {
-            if (this == obj) return true;                     // Reflexive
-
+            if (this == obj) return true;                      
             if (obj == null || getClass() != obj.getClass())
-                return false;                                 // Null & Type check
+                return false;                                  
 
             Feet other = (Feet) obj;
 
@@ -27,7 +26,7 @@ public class FeetEquality {
 
         @Override
         public int hashCode() {
-            return Double.hashCode(value); // Maintain equals-hashCode contract
+            return Double.hashCode(value);  
         }
     }
 
