@@ -2,9 +2,6 @@ package UtitlityClasses;
 
 import java.util.Objects;
 
-/**
- * Immutable value object representing a length measurement.
- */
 public final class QuantityLength {
 
     private final double value;
@@ -38,11 +35,7 @@ public final class QuantityLength {
         return unit.toFeet(value);
     }
 
-    // ---------------- UC5 STATIC API ----------------
 
-    /**
-     * Converts a value from source unit to target unit.
-     */
     public static double convert(double value,
                                  LengthUnit source,
                                  LengthUnit target) {
@@ -60,12 +53,6 @@ public final class QuantityLength {
         return target.fromFeet(valueInFeet);
     }
 
-    // ---------------- INSTANCE METHOD ----------------
-
-    /**
-     * Converts this QuantityLength to another unit.
-     * Returns a new immutable instance.
-     */
     public QuantityLength convertTo(LengthUnit target) {
 
         double convertedValue = convert(this.value, this.unit, target);
@@ -73,7 +60,6 @@ public final class QuantityLength {
         return new QuantityLength(convertedValue, target);
     }
 
-    // ---------------- equals override ----------------
 
 
     @Override

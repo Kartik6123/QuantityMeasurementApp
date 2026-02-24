@@ -39,7 +39,6 @@ public class QuantityMeasurementApp {
 
     public static void main(String[] args) {
 
-        // Static conversion demo
         demonstrateLengthConversion(1.0,
                 LengthUnit.FEET,
                 LengthUnit.INCH);
@@ -56,14 +55,14 @@ public class QuantityMeasurementApp {
                 LengthUnit.CENTIMETERS,
                 LengthUnit.INCH);
 
-        // Instance conversion demo
+
         QuantityLength length =
                 new QuantityLength(1.0, LengthUnit.YARDS);
 
         demonstrateLengthConversion(length,
                 LengthUnit.INCH);
 
-        // Equality demo
+
         QuantityLength q1 =
                 new QuantityLength(1.0, LengthUnit.FEET);
 
