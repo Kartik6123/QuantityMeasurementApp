@@ -6,13 +6,43 @@
   <component name="ChangeListManager">
     <list default="true" id="f8b5f86e-c88b-48a2-9631-c630b972eaa1" name="Changes" comment="[Kartik Arora] Add . Solved use case 13">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main/QuantityMeasurementApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/QuantityMeasurementApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/IMeasurable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UtilityClasses/IMeasurable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/LengthUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UtilityClasses/LengthUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/Quantity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UtilityClasses/Quantity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/VolumeUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UtilityClasses/VolumeUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/WeightUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UtilityClasses/WeightUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/QuantityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/QuantityTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main/QuantityMeasurementApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/QuantityMeasurementApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UtilityClasses/IMeasurable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UtilityClasses/IMeasurable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UtilityClasses/LengthUnit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UtilityClasses/LengthUnit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UtilityClasses/Quantity$ArithmeticOperation$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UtilityClasses/Quantity$ArithmeticOperation$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UtilityClasses/Quantity$ArithmeticOperation$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UtilityClasses/Quantity$ArithmeticOperation$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UtilityClasses/Quantity$ArithmeticOperation$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UtilityClasses/Quantity$ArithmeticOperation$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UtilityClasses/Quantity$ArithmeticOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UtilityClasses/Quantity$ArithmeticOperation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UtilityClasses/Quantity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UtilityClasses/Quantity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UtilityClasses/VolumeUnit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UtilityClasses/VolumeUnit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UtilityClasses/WeightUnit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UtilityClasses/WeightUnit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/QuantityTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/QuantityTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/UC14-Temprature-E-Measurement" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -40,14 +70,36 @@
   "keyToString": {
     "Application.QuantityMeasurementApp.executor": "Run",
     "JUnit.QuantityLengthTest.executor": "Run",
+    "JUnit.QuantityTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/UC14-Temprature-E-Measurement",
-    "kotlin-language-version-configured": "true"
+    "git-widget-placeholder": "feature/UC15-N-Tier-Architecture-Refactoring",
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="QuantityMeasurementApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main.QuantityMeasurementApp" />
+      <module name="QuantityMeasurementApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.QuantityMeasurementApp" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
