@@ -6,12 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="f8b5f86e-c88b-48a2-9631-c630b972eaa1" name="Changes" comment="[Kartik Arora] Add . Solved use case 13">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main/QuantityMeasurementApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/QuantityMeasurementApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/IMeasurable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UtilityClasses/IMeasurable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/Quantity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UtilityClasses/Quantity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/QuantityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/QuantityTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main/QuantityMeasurementApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main/QuantityMeasurementApp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/UtilityClasses/Quantity$ArithmeticOperation$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UtilityClasses/Quantity$ArithmeticOperation$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/UtilityClasses/Quantity$ArithmeticOperation$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UtilityClasses/Quantity$ArithmeticOperation$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/UtilityClasses/Quantity$ArithmeticOperation$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UtilityClasses/Quantity$ArithmeticOperation$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/UtilityClasses/Quantity$ArithmeticOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UtilityClasses/Quantity$ArithmeticOperation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/UtilityClasses/Quantity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UtilityClasses/Quantity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/QuantityTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/QuantityTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +24,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/UC13-CentralizedArithmeticOperations" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -42,17 +52,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.QuantityMeasurementApp.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.QuantityLengthTest.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/UC13-CentralizedArithmeticOperations&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.QuantityMeasurementApp.executor": "Run",
+    "JUnit.QuantityLengthTest.executor": "Run",
+    "JUnit.QuantityTest.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "feature/UC14-Temprature-E-Measurement",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration name="QuantityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="QuantityMeasurementApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.QuantityTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.QuantityTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

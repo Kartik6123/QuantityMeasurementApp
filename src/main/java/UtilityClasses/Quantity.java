@@ -28,7 +28,6 @@ public class Quantity<U extends IMeasurable> {
         return unit;
     }
 
-
     @Override
     public boolean equals(Object obj) {
 
@@ -64,7 +63,7 @@ public class Quantity<U extends IMeasurable> {
         if (targetUnit == null)
             throw new IllegalArgumentException("Target unit cannot be null");
 
-        double base = unit.convertToBaseUnit(value);
+        double base      = unit.convertToBaseUnit(value);
         double converted = targetUnit.convertFromBaseUnit(base);
 
         return new Quantity<>(converted, targetUnit);
@@ -109,7 +108,10 @@ public class Quantity<U extends IMeasurable> {
 
     private double performBaseArithmetic(Quantity<U> other, ArithmeticOperation operation) {
 
-        double baseThis = unit.convertToBaseUnit(this.value);
+        // TemperatureUnit overrides this to throw UnsupportedOperationException
+        this.unit.validateOperationSupport(operation.name());
+
+        double baseThis  = unit.convertToBaseUnit(this.value);
         double baseOther = other.unit.convertToBaseUnit(other.value);
 
         return operation.compute(baseThis, baseOther);
@@ -124,8 +126,7 @@ public class Quantity<U extends IMeasurable> {
         validateArithmeticOperands(other, targetUnit, true);
 
         double baseResult = performBaseArithmetic(other, ArithmeticOperation.ADD);
-
-        double converted = targetUnit.convertFromBaseUnit(baseResult);
+        double converted  = targetUnit.convertFromBaseUnit(baseResult);
 
         return new Quantity<>(converted, targetUnit);
     }
@@ -133,13 +134,13 @@ public class Quantity<U extends IMeasurable> {
     public Quantity<U> subtract(Quantity<U> other) {
         return subtract(other, this.unit);
     }
+
     public Quantity<U> subtract(Quantity<U> other, U targetUnit) {
 
         validateArithmeticOperands(other, targetUnit, true);
 
         double baseResult = performBaseArithmetic(other, ArithmeticOperation.SUBTRACT);
-
-        double converted = targetUnit.convertFromBaseUnit(baseResult);
+        double converted  = targetUnit.convertFromBaseUnit(baseResult);
 
         return new Quantity<>(converted, targetUnit);
     }
@@ -147,6 +148,9 @@ public class Quantity<U extends IMeasurable> {
     public double divide(Quantity<U> other) {
 
         validateArithmeticOperands(other, null, false);
+
+        // TemperatureUnit throws here via validateOperationSupport
+        this.unit.validateOperationSupport(ArithmeticOperation.DIVIDE.name());
 
         return performBaseArithmetic(other, ArithmeticOperation.DIVIDE);
     }
