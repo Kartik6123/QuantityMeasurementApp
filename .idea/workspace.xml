@@ -6,25 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f8b5f86e-c88b-48a2-9631-c630b972eaa1" name="Changes" comment="[Kartik Arora] Add . Solved use case 13">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main/QuantityMeasurementApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/IMeasurable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/LengthUnit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/Quantity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/VolumeUnit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UtilityClasses/WeightUnit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/QuantityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/QuantityTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main/QuantityMeasurementApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/UtilityClasses/IMeasurable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/UtilityClasses/LengthUnit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/UtilityClasses/Quantity$ArithmeticOperation$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/UtilityClasses/Quantity$ArithmeticOperation$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/UtilityClasses/Quantity$ArithmeticOperation$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/UtilityClasses/Quantity$ArithmeticOperation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/UtilityClasses/Quantity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/UtilityClasses/VolumeUnit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/UtilityClasses/WeightUnit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/QuantityTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/QuantityTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
