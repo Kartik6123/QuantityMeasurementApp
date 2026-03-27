@@ -23,12 +23,31 @@ public interface IMeasurable {
     }
 
     static IMeasurable getUnitInstance(String measurementType, String unitName) {
-        switch (measurementType.toUpperCase()) {
-            case "LENGTH":      return LengthUnit.valueOf(unitName.toUpperCase());
-            case "WEIGHT":      return WeightUnit.valueOf(unitName.toUpperCase());
-            case "VOLUME":      return VolumeUnit.valueOf(unitName.toUpperCase());
-            case "TEMPERATURE": return TemperatureUnit.valueOf(unitName.toUpperCase());
-            default: throw new IllegalArgumentException("Unknown measurement type: " + measurementType);
+        if (measurementType == null) throw new IllegalArgumentException("Measurement type cannot be null");
+        if (unitName == null)        throw new IllegalArgumentException("Unit name cannot be null");
+
+        // Normalise: accept "LengthUnit", "LENGTH", "length" etc.
+        String normalized = measurementType.toUpperCase().replace("UNIT", "").trim();
+
+        switch (normalized) {
+            case "LENGTH":
+                try { return LengthUnit.valueOf(unitName.toUpperCase()); }
+                catch (IllegalArgumentException e) {
+                    throw new IllegalArgumentException("Unknown LENGTH unit: '" + unitName + "'"); }
+            case "WEIGHT":
+                try { return WeightUnit.valueOf(unitName.toUpperCase()); }
+                catch (IllegalArgumentException e) {
+                    throw new IllegalArgumentException("Unknown WEIGHT unit: '" + unitName + "'"); }
+            case "VOLUME":
+                try { return VolumeUnit.valueOf(unitName.toUpperCase()); }
+                catch (IllegalArgumentException e) {
+                    throw new IllegalArgumentException("Unknown VOLUME unit: '" + unitName + "'"); }
+            case "TEMPERATURE":
+                try { return TemperatureUnit.valueOf(unitName.toUpperCase()); }
+                catch (IllegalArgumentException e) {
+                    throw new IllegalArgumentException("Unknown TEMPERATURE unit: '" + unitName + "'"); }
+            default:
+                throw new IllegalArgumentException("Unknown measurement type: '" + measurementType + "'");
         }
     }
 }

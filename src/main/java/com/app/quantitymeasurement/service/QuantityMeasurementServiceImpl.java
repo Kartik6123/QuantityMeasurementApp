@@ -74,6 +74,9 @@ public class QuantityMeasurementServiceImpl implements IQuantityMeasurementServi
     @SuppressWarnings("unchecked")
     public QuantityMeasurementDTO convert(QuantityDTO source, QuantityDTO target) {
         try {
+            if (!source.getMeasurementType().equals(target.getMeasurementType()))
+                throw new QuantityMeasurementException("Cannot convert between different measurement categories: "
+                        + source.getMeasurementType() + " and " + target.getMeasurementType());
             Quantity qty = toQuantity(source);
             IMeasurable targetUnit = IMeasurable.getUnitInstance(target.getMeasurementType(), target.getUnit());
             Quantity converted = qty.convertTo(targetUnit);
@@ -140,9 +143,18 @@ public class QuantityMeasurementServiceImpl implements IQuantityMeasurementServi
             QuantityMeasurementDTO dto = buildBase(q1, q2, "divide");
             dto.setResultValue(result);
             return saveAndReturn(dto);
+        } catch (QuantityMeasurementException e) {
+            logger.error("Divide failed: {}", e.getMessage());
+            saveAndReturn(buildError(q1, q2, "divide", e.getMessage()));
+            throw e;
+        } catch (UnsupportedOperationException e) {
+            logger.error("Divide failed (unsupported): {}", e.getMessage());
+            saveAndReturn(buildError(q1, q2, "divide", e.getMessage()));
+            throw new QuantityMeasurementException(e.getMessage(), e);
         } catch (Exception e) {
             logger.error("Divide failed: {}", e.getMessage());
-            return saveAndReturn(buildError(q1, q2, "divide", e.getMessage()));
+            saveAndReturn(buildError(q1, q2, "divide", e.getMessage()));
+            throw new RuntimeException(e.getMessage(), e);
         }
     }
 

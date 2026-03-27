@@ -4,63 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8b5f86e-c88b-48a2-9631-c630b972eaa1" name="Changes" comment="[Kartik Arora] Add . Solved use case 13">
-      <change beforePath="$PROJECT_DIR$/.idea/QuantityMeasurementApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/QuantityMeasurementApp.iml" afterDir="false" />
+    <list default="true" id="f8df39f1-4a04-4f27-afab-bd55547be211" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/QuantityMeasurementApp.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/quantitymeasurement/QuantityMeasurementApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/quantitymeasurement/controller/QuantityMeasurementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/quantitymeasurement/controller/QuantityMeasurementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/quantitymeasurement/entity/QuantityDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/quantitymeasurement/entity/QuantityMeasurementEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/quantitymeasurement/entity/QuantityModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/quantitymeasurement/repository/IQuantityMeasurementRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/quantitymeasurement/repository/QuantityMeasurementCacheRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/quantitymeasurement/repository/QuantityMeasurementDatabaseRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/quantitymeasurement/service/IQuantityMeasurementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/quantitymeasurement/service/IQuantityMeasurementService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/quantitymeasurement/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/quantitymeasurement/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/quantitymeasurement/model/QuantityInputDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/quantitymeasurement/model/QuantityInputDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/app/quantitymeasurement/service/QuantityMeasurementServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/quantitymeasurement/service/QuantityMeasurementServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/quantitymeasurement/util/ApplicationConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/quantitymeasurement/util/ConnectionPool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/quantitymeasurement/unit/IMeasurable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/quantitymeasurement/unit/IMeasurable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/QuantityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/QuantityTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/QuantityMeasurementApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/controller/QuantityMeasurementController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/entity/QuantityDTO$IMeasurableUnit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/entity/QuantityDTO$LengthUnit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/entity/QuantityDTO$TemperatureUnit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/entity/QuantityDTO$VolumeUnit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/entity/QuantityDTO$WeightUnit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/entity/QuantityDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/entity/QuantityMeasurementEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/entity/QuantityModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/exception/DatabaseException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/exception/QuantityMeasurementException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/repository/IQuantityMeasurementRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/repository/QuantityMeasurementCacheRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/repository/QuantityMeasurementDatabaseRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/service/IQuantityMeasurementService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/service/QuantityMeasurementServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/unit/IMeasurable$SupportsArithmetic.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/unit/IMeasurable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/unit/LengthUnit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/unit/Quantity$ArithmeticOperation$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/unit/Quantity$ArithmeticOperation$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/unit/Quantity$ArithmeticOperation$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/unit/Quantity$ArithmeticOperation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/unit/Quantity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/unit/TemperatureUnit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/unit/VolumeUnit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/unit/WeightUnit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/util/ApplicationConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/util/ConnectionPool.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/QuantityTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/exception/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/exception/GlobalExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/model/QuantityDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/model/QuantityDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/model/QuantityInputDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/model/QuantityInputDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/model/QuantityMeasurementDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/model/QuantityMeasurementDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/model/QuantityMeasurementEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/model/QuantityMeasurementEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/service/QuantityMeasurementServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/service/QuantityMeasurementServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/unit/IMeasurable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/unit/IMeasurable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/unit/Quantity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/unit/Quantity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/unit/TemperatureUnit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/app/quantitymeasurement/unit/TemperatureUnit.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_D:/QuantityMeasurementApp" value="3BXgEZlrNITNBKM18qVblg9CyId" />
+    </persistenceIdMap>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -73,7 +50,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Kartik6123/QuantityMeasurementApp.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/Kartik6123/QuantityMeasurementApp&quot;,
     &quot;accountId&quot;: &quot;87a425ff-089f-49b8-972a-0673033f57f3&quot;
   }
 }</component>
@@ -81,29 +58,115 @@
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 6
 }</component>
-  <component name="ProjectId" id="39zxWLBmRwXFozD6XcuzYLWU1fY" />
+  <component name="ProjectId" id="3BXgEZlrNITNBKM18qVblg9CyId" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.QuantityMeasurementApp.executor": "Run",
-    "JUnit.QuantityLengthTest.executor": "Run",
-    "JUnit.QuantityTest.executor": "Run",
-    "Maven.quantity-measurement-app [clean].executor": "Run",
+    "JUnit.QuantityMeasurementAppApplicationTests.executor": "Run",
+    "JUnit.QuantityMeasurementControllerTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "Spring Boot.QuantityMeasurementAppApplication.executor": "Run",
-    "git-widget-placeholder": "feature/UC17-Spring-Backend",
+    "git-widget-placeholder": "UC17-Spring-Backend",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.QuantityMeasurementAppApplicationTests">
+    <configuration name="QuantityMeasurementAppApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="quantity-measurement-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.app.quantitymeasurement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.app.quantitymeasurement" />
+      <option name="MAIN_CLASS_NAME" value="com.app.quantitymeasurement.QuantityMeasurementAppApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuantityMeasurementControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="quantity-measurement-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.app.quantitymeasurement.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.app.quantitymeasurement.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.app.quantitymeasurement.controller.QuantityMeasurementControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="QuantityMeasurementApp" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="QuantityMeasurementAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="quantity-measurement-app" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.app.quantitymeasurement.QuantityMeasurementAppApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.app.quantitymeasurement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="QuantityMeasurementApp" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.QuantityMeasurementAppApplicationTests" />
+        <item itemvalue="JUnit.QuantityMeasurementControllerTest" />
+        <item itemvalue="Spring Boot.QuantityMeasurementAppApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -113,43 +176,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f8b5f86e-c88b-48a2-9631-c630b972eaa1" name="Changes" comment="" />
-      <created>1771712733662</created>
+      <changelist id="f8df39f1-4a04-4f27-afab-bd55547be211" name="Changes" comment="" />
+      <created>1774640721139</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1771712733662</updated>
+      <updated>1774640721139</updated>
     </task>
-    <task id="LOCAL-00001" summary="[Kartik Arora] Add . Solved use case 9">
-      <option name="closed" value="true" />
-      <created>1771913151028</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1771913151028</updated>
-    </task>
-    <task id="LOCAL-00002" summary="[Kartik Arora] Add . Solved use case 9">
-      <option name="closed" value="true" />
-      <created>1771913157906</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1771913157906</updated>
-    </task>
-    <task id="LOCAL-00003" summary="[Kartik Arora] Add . Solved use case 13">
-      <option name="closed" value="true" />
-      <created>1771913586134</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1771913586134</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Kartik Arora] Add . Solved use case 9" />
-    <MESSAGE value="[Kartik Arora] Add . Solved use case 13" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Kartik Arora] Add . Solved use case 13" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
