@@ -1,0 +1,13 @@
+C:\microservices\auth-service\src\main\java\com\app\quantitymeasurement\security\jwt\JwtService.java
+C:\microservices\auth-service\src\main\java\com\app\quantitymeasurement\security\CustomUserDetailsService.java
+C:\microservices\auth-service\src\main\java\com\app\quantitymeasurement\auth\dto\RegisterRequest.java
+C:\microservices\auth-service\src\main\java\com\app\quantitymeasurement\security\SecurityConfig.java
+C:\microservices\auth-service\src\main\java\com\app\quantitymeasurement\user\entity\User.java
+C:\microservices\auth-service\src\main\java\com\app\quantitymeasurement\user\entity\Role.java
+C:\microservices\auth-service\src\main\java\com\app\quantitymeasurement\user\repository\UserRepository.java
+C:\microservices\auth-service\src\main\java\com\app\quantitymeasurement\AuthServiceApplication.java
+C:\microservices\auth-service\src\main\java\com\app\quantitymeasurement\auth\dto\AuthResponse.java
+C:\microservices\auth-service\src\main\java\com\app\quantitymeasurement\auth\dto\LoginRequest.java
+C:\microservices\auth-service\src\main\java\com\app\quantitymeasurement\security\filter\JwtAuthenticationFilter.java
+C:\microservices\auth-service\src\main\java\com\app\quantitymeasurement\security\oauth\OAuth2LoginSuccessHandler.java
+C:\microservices\auth-service\src\main\java\com\app\quantitymeasurement\auth\controller\AuthController.java
